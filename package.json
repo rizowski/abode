@@ -1,0 +1,36 @@
+{
+  "name": "abode",
+  "version": "0.0.1",
+  "description": "Simple Environments",
+  "main": "index.js",
+  "scripts": {
+    "lint": "esw --quiet",
+    "test": "mocha --recursive test",
+    "ci": "npm run lint && npm test",
+    "build": "babel -d lib/ src/",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizowski/abode.git"
+  },
+  "keywords": [
+    "environment"
+  ],
+  "author": "Colten Rouska",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rizowski/abode/issues"
+  },
+  "homepage": "https://github.com/rizowski/abode#readme",
+  "devDependencies": {
+    "babel": "^5.8.29",
+    "babel-runtime": "^5.8.29",
+    "chai": "^3.4.0",
+    "eslint": "^1.8.0",
+    "eslint-watch": "^2.1.3",
+    "istanbul": "^0.4.0",
+    "mocha": "^2.3.3",
+    "sinon": "^1.17.2"
+  }
+}
