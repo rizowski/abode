@@ -1,1 +1,8 @@
 src
+tests
+.babelrc
+.editorconfig
+.eslint*
+.gitignore
+.npmignore
+.travis.yml
